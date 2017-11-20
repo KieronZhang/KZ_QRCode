@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEA5EC001FC2AD30003D7BD1 /* KZ_QRCodeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA5EBFF1FC2AD30003D7BD1 /* KZ_QRCodeFramework.framework */; };
 		AED11A541FBF56E600AF7F19 /* icon40.png in Resources */ = {isa = PBXBuildFile; fileRef = AED11A531FBF56E600AF7F19 /* icon40.png */; };
 		AEDB0D711E0DA4D200D4632B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0D701E0DA4D200D4632B /* main.m */; };
 		AEDB0D741E0DA4D200D4632B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0D731E0DA4D200D4632B /* AppDelegate.m */; };
@@ -15,10 +16,23 @@
 		AEDB0D7C1E0DA4D300D4632B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDB0D7B1E0DA4D300D4632B /* Assets.xcassets */; };
 		AEDB0D7F1E0DA4D300D4632B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEDB0D7D1E0DA4D300D4632B /* LaunchScreen.storyboard */; };
 		AEDB0DAE1E0DA5BC00D4632B /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0DAD1E0DA5BC00D4632B /* ImageViewController.m */; };
-		AEDC10141FC1D6A500752728 /* KZ_QRCodeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDC10131FC1D6A500752728 /* KZ_QRCodeFramework.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AEDC10081FC1D63000752728 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AEA5EBFF1FC2AD30003D7BD1 /* KZ_QRCodeFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KZ_QRCodeFramework.framework; sourceTree = "<group>"; };
 		AED11A531FBF56E600AF7F19 /* icon40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon40.png; sourceTree = "<group>"; };
 		AEDB0D6C1E0DA4D200D4632B /* KZ_QRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KZ_QRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEDB0D701E0DA4D200D4632B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -32,7 +46,6 @@
 		AEDB0D801E0DA4D300D4632B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEDB0DAC1E0DA5BC00D4632B /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		AEDB0DAD1E0DA5BC00D4632B /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
-		AEDC10131FC1D6A500752728 /* KZ_QRCodeFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KZ_QRCodeFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,13 +53,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEDC10141FC1D6A500752728 /* KZ_QRCodeFramework.framework in Frameworks */,
+				AEA5EC001FC2AD30003D7BD1 /* KZ_QRCodeFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AEA5EBFE1FC2AD30003D7BD1 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				AEA5EBFF1FC2AD30003D7BD1 /* KZ_QRCodeFramework.framework */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
 		AEDB0D631E0DA4D200D4632B = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +94,7 @@
 				AEDB0DAC1E0DA5BC00D4632B /* ImageViewController.h */,
 				AEDB0DAD1E0DA5BC00D4632B /* ImageViewController.m */,
 				AED11A531FBF56E600AF7F19 /* icon40.png */,
-				AEDB0DA21E0DA51A00D4632B /* QRCode */,
+				AEA5EBFE1FC2AD30003D7BD1 /* QRCode */,
 				AEDB0D781E0DA4D200D4632B /* Main.storyboard */,
 				AEDB0D7B1E0DA4D300D4632B /* Assets.xcassets */,
 				AEDB0D7D1E0DA4D300D4632B /* LaunchScreen.storyboard */,
@@ -91,14 +112,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AEDB0DA21E0DA51A00D4632B /* QRCode */ = {
-			isa = PBXGroup;
-			children = (
-				AEDC10131FC1D6A500752728 /* KZ_QRCodeFramework.framework */,
-			);
-			path = QRCode;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +122,7 @@
 				AEDB0D681E0DA4D200D4632B /* Sources */,
 				AEDB0D691E0DA4D200D4632B /* Frameworks */,
 				AEDB0D6A1E0DA4D200D4632B /* Resources */,
+				AEDC10081FC1D63000752728 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,6 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = TGTFTDLM8G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -327,6 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = TGTFTDLM8G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
