@@ -1,13 +1,13 @@
 //
 //  ImageViewController.m
-//  KZ_QRCode
+//  KZ_QRCode_iOS
 //
-//  Created by Kieron Zhang on 2016/12/24.
-//  Copyright © 2016年 Kieron Zhang. All rights reserved.
+//  Created by Kieron Zhang on 2018/5/10.
+//  Copyright © 2018年 Kieron Zhang. All rights reserved.
 //
 
 #import "ImageViewController.h"
-#import <KZ_QRCodeFramework/KZ_QRCodeManager.h>
+#import <KZ_QRCode_iOS/KZ_QRCodeManager.h>
 
 @interface ImageViewController ()
 
