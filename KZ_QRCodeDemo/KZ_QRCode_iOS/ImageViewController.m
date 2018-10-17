@@ -20,19 +20,19 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"二维码";
     
-    textField = [[UITextField alloc] initWithFrame:CGRectMake(10, 64, CGRectGetWidth(self.view.bounds) - 20, 40)];
+    textField = [[UITextField alloc] initWithFrame:CGRectMake(10, 164, CGRectGetWidth(self.view.bounds) - 20, 40)];
     textField.text = @"ajkjlkjkljijijinasdfadsfadfqwerqwerqwe";
     [self.view addSubview:textField];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(10, 110, CGRectGetWidth(self.view.bounds) - 20, 30);
+    button.frame = CGRectMake(10, 210, CGRectGetWidth(self.view.bounds) - 20, 30);
     button.backgroundColor = [UIColor yellowColor];
     [button setTitle:@"生成二维码" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [button addTarget:self action:@selector(createQRImage) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
-    imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 150, CGRectGetWidth(self.view.bounds) - 20, CGRectGetWidth(self.view.bounds) - 20)];
+    imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 250, CGRectGetWidth(self.view.bounds) - 20, CGRectGetWidth(self.view.bounds) - 20)];
     [self.view addSubview:imageView];
     
     UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressGesture:)];

@@ -15,7 +15,7 @@
 		AE40057120A4270F00017619 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE40057020A4270F00017619 /* main.m */; };
 		AE40057C20A4277800017619 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE40057A20A4277800017619 /* ImageViewController.m */; };
 		AE40057E20A4278500017619 /* icon40.png in Resources */ = {isa = PBXBuildFile; fileRef = AE40057D20A4278500017619 /* icon40.png */; };
-		AE40058120A427A500017619 /* KZ_QRCode_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE40058020A427A500017619 /* KZ_QRCode_iOS.framework */; };
+		AEF94D922176E4B30063EE69 /* KZ_QRCode_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF94D912176E4B30063EE69 /* KZ_QRCode_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 		AE40057A20A4277800017619 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		AE40057B20A4277800017619 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		AE40057D20A4278500017619 /* icon40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon40.png; sourceTree = "<group>"; };
-		AE40058020A427A500017619 /* KZ_QRCode_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KZ_QRCode_iOS.framework; sourceTree = "<group>"; };
+		AEF94D912176E4B30063EE69 /* KZ_QRCode_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KZ_QRCode_iOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE40058120A427A500017619 /* KZ_QRCode_iOS.framework in Frameworks */,
+				AEF94D922176E4B30063EE69 /* KZ_QRCode_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 		AE40057F20A427A500017619 /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
-				AE40058020A427A500017619 /* KZ_QRCode_iOS.framework */,
+				AEF94D912176E4B30063EE69 /* KZ_QRCode_iOS.framework */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -319,7 +319,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kieronzhang.KZ-QRCode-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kieronzhang.QRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -343,7 +343,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kieronzhang.KZ-QRCode-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kieronzhang.QRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
